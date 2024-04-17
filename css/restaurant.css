@@ -16,9 +16,9 @@
     background: transparent;
   }
 
+/*Style header*/
 .header {
     background: white;
-    border-bottom: 1px solid #ddd;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     display: flex;
     gap: 16px;
@@ -27,25 +27,50 @@
     top: 0; /* Placer menu-containeren i toppen af vinduet */
     left: 0; /* Placer menu-containeren helt til venstre i vinduet */
     width: 100%; /* Gør menu-containeren 100% bredde */
+    
   }
 
-.header ul{
+  .header ul{
     list-style-type: none;
     padding: 0;
     margin: 0;
     display: flex;
 }
 
+.header li {
+    margin: 30px;
+    display:inline-flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+   
+  }
+
 .header a {
     text-decoration: none; /* Fjerner strejerne under overskrifterne*/
     color:var(--sort);
     font-family:Radio Canada; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
     font-weight: 400;
-    font-size: 18px;
+    font-size: 24px;
     font-style: normal;
+
   }
+
+
+/*Style logo*/
+.logo{
+    margin: 30px;
+  
+}
 
 /*style footer*/
 .footer {
-    background-color: var(--rød)
+    background-color: var(--rød);
+    display: flex;
+    flex-direction: row;
+}
+
+.iconer {
+    display: flex;
+    flex-direction: row;
+    
 }
