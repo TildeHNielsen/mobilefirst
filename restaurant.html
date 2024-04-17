@@ -17,6 +17,8 @@
             <a class="logo" href="/restaurant.html">
                 <img src="/img/kowloonlogo.png" alt="Kowloon logo" height="80px">
             </a>
+            <input type="checkbox" id="toggle" />
+            <label for="toggle" class="burger-icon">&#9776;</label>
             <ul class="navbar">
                 <li> <a href="/forretter.html">Menukort</a>
                     <div class="dropdown-content">
@@ -34,15 +36,16 @@
                 <li> <a href="/bestilbord.html">Bestil bord</a> </li>
                 <li> <a href="#">Bestil takeaway</a></li>
                 <li> <a href="#">Om os</a>
-                    <div class="dropdown-content">
-                        <a href="#"><p>Kontakt</p></a>
-                        <a href="#"><p>Åbningstider</p></a>
-                        <a href="#"><p>Følg os</p></a>
+                    <div class="dropdown-content" id="dropdown-left">
+                            <a href="#"><p>Kontakt</p></a>
+                            <a href="#"><p>Åbningstider</p></a>
+                            <a href="#"><p>Følg os</p></a>
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
-    </header>    
+    </header>   
     
     <main>
 
@@ -50,7 +53,7 @@
     <footer>
         <section class="footerdisplay">
            <section class="footer">
-            <p class="tekstfooter"> <span class="fedskriftfooter">Åbningstider</span> <br>
+            <p class="tekstfooter"> <span class="fedskriftfooter overskriftfooter">Åbningstider</span> <br>
                 Mandag: 12-20 <br>
                 Tirsdag: <span class="fedskriftfooter">Lukket</span> <br>
                 Onsdag: 12-20 <br>
@@ -61,22 +64,22 @@
             </p>
            </section>
 
-           <section class="footer">
-            <a href="https://www.findsmiley.dk/508461">
+           <section class="footer iconerto">
+            <a href="https://www.findsmiley.dk/508461" class="iconer-ingenstreg">
                <img class="iconer" src="img/elitesmiley.png" alt="elite smiley">
             </a>
             
-            <a href="https://www.instagram.com/kowloonaarhus/?hl=da">
+            <a href="https://www.instagram.com/kowloonaarhus/?hl=da" class="iconer-ingenstreg">
                <img class="iconer" src="img/instagramlogo.png" alt="instagram logo">
             </a>
 
-            <a href="https://www.facebook.com/KowloonAarhus?locale=da_DK">
+            <a href="https://www.facebook.com/KowloonAarhus?locale=da_DK" class="iconer-ingenstreg">
                <img class="iconer" src="img/facebooklogo.png" alt="facebook logo">
             </a>
            </section>
 
            <section class="footer">
-            <p class="tekstfooter"> <span class="fedskriftfooter">Kontakt</span> <br>
+            <p class="tekstfooter"> <span class="fedskriftfooter overskriftfooter">Kontakt</span> <br>
                 Frederiksgade 78, Aarhus C <br> <br>
                 Tlf. 86 19 19 98 <br> <br>
                 Mail@kowloon.dk <br>
