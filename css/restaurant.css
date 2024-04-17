@@ -88,4 +88,6 @@
 /*font type*/
 .tekstfooter {
     font-family:Radio Canada, sans-serif; /*font fundet på google*/
+    color: var(--hvid);
+    line-height: 1.5;
 }
