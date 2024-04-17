@@ -107,21 +107,16 @@
 }
 
 
-/*style footer*/
-.footer 
-
-
-
 
 @media screen and (max-width: 600px) {
- /*Style footer mobil*/
-
- /*footer udseende*/
- .footer {
-    background-color: var(--rød);
-    padding-top: 3%;
-    padding-bottom: 3%;
- }
+    /*Style footer mobil*/
+   
+    /*footer udseende*/
+    .footer {
+       background-color: var(--rød);
+       padding-top: 3%;
+       padding-bottom: 3%;
+    }
 
  /*størrelse på iconer*/
  .iconer {
