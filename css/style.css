@@ -23,10 +23,12 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 1rem;
   }
 
 /*vælg restaurant*/
 h1 {
-    font-family: "Radio+Canada" sans-serif;
+    font-family: "Radio Canada", sans-serif;
+    text-align: center;
 }
 
