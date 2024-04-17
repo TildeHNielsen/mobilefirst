@@ -29,5 +29,15 @@
 
 /*style footer*/
 .footer {
-    background-color: var(--rød)
+    background-color: var(--rød);
+    display: flex;
+    flex-direction: row;
 }
+
+.iconer {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+
