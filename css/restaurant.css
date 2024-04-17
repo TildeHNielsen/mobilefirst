@@ -132,6 +132,8 @@
  /*For at fjerne stregen under pga link*/
  .iconer-ingenstreg {
     text-decoration: none;
+    padding-left: 2px;
+    padding-right: 2px;
  }
 
  /*placering af indhold i footer*/
@@ -187,6 +189,8 @@
  /*For at fjerne stregen under pga link*/
  .iconer-ingenstreg {
     text-decoration: none;
+    padding-left: 2px;
+    padding-right: 2px;
  }
 
  /*placering af indhold i footer*/
@@ -239,6 +243,8 @@
 /*Ingen steg under link*/
  .iconer-ingenstreg {
     text-decoration: none;
+    padding-left: 2px;
+    padding-right: 2px;
  }
 
  /*For at få iconerne til at være nederst på siden*/
