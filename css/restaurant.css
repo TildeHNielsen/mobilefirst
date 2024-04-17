@@ -39,7 +39,7 @@
 .header a {
     text-decoration: none; /* Fjerner strejerne under overskrifterne*/
     color:var(--sort);
-    font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+    font-family:Radio Canada; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
     font-weight: 400;
     font-size: 18px;
     font-style: normal;
