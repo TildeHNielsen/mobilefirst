@@ -67,13 +67,17 @@
     background-color: var(--rød);
     display: flex;
     flex-direction: row;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
+/*størrelse på iconer*/
 .iconer {
     width: auto;
     height: 30px;
 }
 
+/*placering af indhold i footer*/
 .footerdisplay {
     background-color: var(--rød);
     display: flex;
@@ -81,7 +85,12 @@
     justify-content: space-evenly;
 }
 
+/*tekst der skal markeres i footer*/
 .fedskriftfooter {
     font-weight: bolder;
-    
+}
+
+/*font type*/
+.tekstfooter {
+    font-family:Radio Canada, sans-serif; /*font fundet på google*/
 }
