@@ -28,7 +28,14 @@ img {
 
 /*vælg restaurant*/
 h1 {
-    font-family: "Radio Canada", sans-serif;
+    font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/
     text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    font-weight: lighter;
 }
-
+.billeder {
+    display: flex;
+    margin: -0.1rem;
+    padding: -10rem;
+}
