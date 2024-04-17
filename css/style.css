@@ -1,0 +1,14 @@
+/*header*/
+
+/*justering af logo*/
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/*vælg restaurant*/
+h1 {
+    font-family: "radiocanada" sans-serif;
+}
+
