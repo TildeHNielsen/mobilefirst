@@ -57,37 +57,163 @@
   
 }
 
-/*style footer*/
-.footer {
+
+
+
+
+@media screen and (max-width: 600px) {
+ /*Style footer mobil*/
+
+ .footer {
     background-color: var(--rød);
-    display: flex;
-    flex-direction: row;
     padding-top: 5%;
     padding-bottom: 5%;
+ }
+
+ /*størrelse på iconer*/
+ .iconer {
+    width: auto;
+    height: 15px;
+ }
+
+ .iconerto {
+    order: 1;
+ }
+
+ .iconer-ingenstreg {
+ }
+
+ /*placering af indhold i footer*/
+ .footerdisplay {
+    background-color: var(--rød);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ /*tekst der skal markeres i footer*/
+ .fedskriftfooter {
+    font-weight: bolder;
+ }
+
+ .overskriftfooter {
+    font-size: 0.75rem;
+ }
+
+ /*font type*/
+ .tekstfooter {
+    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
+    color: var(--hvid);
+    line-height: 1.5;
+    font-size: 0.5rem;
+    text-align: center;
+ }
+
 }
 
-/*størrelse på iconer*/
-.iconer {
+@media screen and (min-width: 600px) {
+ /*Style footer større end mobil*/
+ .footer {
+    background-color: var(--rød);
+    padding-top: 5%;
+    padding-bottom: 5%;
+ }
+
+ /*størrelse på iconer*/
+ .iconer {
     width: auto;
     height: 30px;
-}
+ }
 
-/*placering af indhold i footer*/
-.footerdisplay {
+ /*placering af indhold i footer*/
+ .footerdisplay {
     background-color: var(--rød);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
+ }
 
-/*tekst der skal markeres i footer*/
-.fedskriftfooter {
+ /*tekst der skal markeres i footer*/
+ .fedskriftfooter {
     font-weight: bolder;
-}
+ }
 
-/*font type*/
-.tekstfooter {
-    font-family:Radio Canada, sans-serif; /*font fundet på google*/
+ /*font type*/
+ .tekstfooter {
+    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
     color: var(--hvid);
     line-height: 1.5;
+ }
+}
+
+@media screen and (min-width: 768px) {
+    /*Style footer større end mobil op til desktop*/
+ .footer {
+    background-color: var(--rød);
+    flex-direction: row;
+    padding-top: 5%;
+    padding-bottom: 5%;
+ }
+
+ /*størrelse på iconer*/
+ .iconer {
+    width: auto;
+    height: 30px;
+ }
+
+ /*placering af indhold i footer*/
+ .footerdisplay {
+    background-color: var(--rød);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+
+ /*tekst der skal markeres i footer*/
+ .fedskriftfooter {
+    font-weight: bolder;
+ }
+
+ /*font type*/
+ .tekstfooter {
+    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
+    color: var(--hvid);
+    line-height: 1.5;
+ }
+}
+
+@media screen and (min-width: 992px) {
+        /*Style footer desktop*/
+ .footer {
+    background-color: var(--rød);
+    flex-direction: row;
+    padding-top: 5%;
+    padding-bottom: 5%;
+ }
+
+ /*størrelse på iconer*/
+ .iconer {
+    width: auto;
+    height: 30px;
+ }
+
+ /*placering af indhold i footer*/
+ .footerdisplay {
+    background-color: var(--rød);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+
+ /*tekst der skal markeres i footer*/
+ .fedskriftfooter {
+    font-weight: bolder;
+ }
+
+ /*font type*/
+ .tekstfooter {
+    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
+    color: var(--hvid);
+    line-height: 1.5;
+ }
 }
