@@ -6,55 +6,72 @@
     <link rel="stylesheet" href="css/restaurant.css">
     <title>Restaurant Kowloon</title>
     <link rel="icon" type="image/x-icon" href="img/kowloonlogo.png">
+ <!-- Fonten Radio Canada er blevet taget fra Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="header">
-            <img class="logo" src="/img/kowloonlogo.png" alt="Kowloon logo">
-            <ul class="navbar-overskrifter">
-              <li>
-                    <a href="/forretter.html">Menukort</a>
-                </li>
-                <li>
-                    <a href="/bestilbord.html">Bestil bord</a>
-                </li>
-                <li>
-                    <a href="#">Bestil takeaway</a>
-                </li>
-                <li>
-                    <a href="#">Om os</a>
-                </li>
-            </ul>
+            <a class="logo" href="/restaurant.html">
+                <img src="/img/kowloonlogo.png" alt="Kowloon logo" height="80px">
+            </a>
+            <div class="navbar">  
+                <li> <a href="/forretter.html">Menukort</a>
+                    </li>
+                    <li> <a href="/bestilbord.html">Bestil bord</a>
+                    </li>
+                    <li> <a href="#">Bestil takeaway</a>
+                    </li>
+                    <li> <a href="#">Om os</a>
+                    </li>
+                </ul>
+            </div>  
         </div>
     </header>
     <main>
 
     </main>
     <footer>
-        <section class="footer">
-            <h5>Åbningstider</h5> <br>
-            <p>Mandag: 12-20 <br>
-                Tirsdag: lukket <br>
+        <section class="footerdisplay">
+           <section class="footer">
+            <p class="tekstfooter"> <span class="fedskriftfooter">Åbningstider</span> <br>
+                Mandag: 12-20 <br>
+                Tirsdag: <span class="fedskriftfooter">Lukket</span> <br>
                 Onsdag: 12-20 <br>
                 Torsdag: 12-20 <br>
                 Fredag: 12-20 <br>
                 Lørdag: 12-20 <br>
-                Søndag: 12-20</p>
-        </section>
+                Søndag: 12-20
+            </p>
+           </section>
 
-        <section class="footer">
-            <img class="iconer" src="img/elitesmiley.png" alt="elite smiley">
-            <img class="iconer" src="img/instagramlogo.png" alt="instagram logo">
-            <img class="iconer" src="img/facebooklogo.png" alt="facebook logo">
-        </section>
+           <section class="footer">
+            <a href="https://www.findsmiley.dk/508461">
+               <img class="iconer" src="img/elitesmiley.png" alt="elite smiley">
+            </a>
+            
+            <a href="https://www.instagram.com/kowloonaarhus/?hl=da">
+               <img class="iconer" src="img/instagramlogo.png" alt="instagram logo">
+            </a>
 
-        <section class="footer">
-            <h5>Kontakt</h5> <br>
-            <p>Frederiksgade 78, Aarhus C <br> <br>
+            <a href="https://www.facebook.com/KowloonAarhus?locale=da_DK">
+               <img class="iconer" src="img/facebooklogo.png" alt="facebook logo">
+            </a>
+           </section>
+
+           <section class="footer">
+            <p class="tekstfooter"> <span class="fedskriftfooter">Kontakt</span> <br>
+                Frederiksgade 78, Aarhus C <br> <br>
                 Tlf. 86 19 19 98 <br> <br>
-                Mail@kowloon.dk (Ingen bordbestillinger og takeaway over mail)</p>
+                Mail@kowloon.dk <br>
+                (Ingen bordbestillinger <br>
+                 og takeaway over mail)
+            </p>
+           </section>
+
         </section>
-        
     </footer>
 </body>
 </html>

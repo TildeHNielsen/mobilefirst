@@ -16,46 +16,76 @@
     background: transparent;
   }
 
+/*Style header*/
 .header {
     background: white;
-    border-bottom: 1px solid #ddd;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     display: flex;
     gap: 16px;
     padding: 0 8px;
-    position: fixed; /* Fastgør menu-containeren øverst på siden */
+     /* Fastgør menu-containeren øverst på siden */
     top: 0; /* Placer menu-containeren i toppen af vinduet */
     left: 0; /* Placer menu-containeren helt til venstre i vinduet */
     width: 100%; /* Gør menu-containeren 100% bredde */
+    
   }
 
-.header ul{
+.navbar li {
+    margin: 30px;
+    display:inline-flex;
+    margin-top: 60px;
+    margin-right: 10px;
+    justify-content: flex-end;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
+    flex-direction: row;
+  }
 
-.header a {
+.navbar a {
     text-decoration: none; /* Fjerner strejerne under overskrifterne*/
     color:var(--sort);
-    font-family: "Poppins", sans-serif; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+    font-family:Radio Canada; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
     font-weight: 400;
-    font-size: 18px;
+    font-size: 24px;
     font-style: normal;
+
   }
+
+
+/*Style logo*/
+.logo{
+    margin: 30px;
+  
+}
 
 /*style footer*/
 .footer {
     background-color: var(--rød);
     display: flex;
     flex-direction: row;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
+/*størrelse på iconer*/
 .iconer {
+    width: auto;
+    height: 30px;
+}
+
+/*placering af indhold i footer*/
+.footerdisplay {
+    background-color: var(--rød);
     display: flex;
     flex-direction: row;
-    
+    justify-content: space-evenly;
 }
 
+/*tekst der skal markeres i footer*/
+.fedskriftfooter {
+    font-weight: bolder;
+}
 
+/*font type*/
+.tekstfooter {
+    font-family:Radio Canada, sans-serif; /*font fundet på google*/
+}
