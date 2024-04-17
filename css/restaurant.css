@@ -16,47 +16,99 @@
     background: transparent;
   }
 
-/*Style header*/
 .header {
     background: white;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     display: flex;
-    gap: 16px;
+    justify-content: space-between; /* Justeret til at placere logo og overskrifter i hver sin ende */
+    align-items: center; /* Centrerer elementerne lodret */
     padding: 0 8px;
-     /* Fastgør menu-containeren øverst på siden */
-    top: 0; /* Placer menu-containeren i toppen af vinduet */
-    left: 0; /* Placer menu-containeren helt til venstre i vinduet */
-    width: 100%; /* Gør menu-containeren 100% bredde */
-    
-  }
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+}
 
 .navbar li {
-    margin: 30px;
-    display:inline-flex;
-    margin-top: 60px;
-    margin-right: 10px;
-    justify-content: flex-end;
-    list-style-type: none;
-    flex-direction: row;
-  }
+    margin-right: 60px;
+}
 
 .navbar a {
-    text-decoration: none; /* Fjerner strejerne under overskrifterne*/
-    color:var(--sort);
-    font-family:Radio Canada; /* Denne font er blevet tager fra Google Fonts, og er linket i head i html*/
+    text-decoration: none;
+    color: var(--sort);
+    font-family: Radio Canada,sans-serif;
     font-weight: 400;
     font-size: 24px;
     font-style: normal;
-
-  }
-
-
-/*Style logo*/
-.logo{
-    margin: 30px;
-  
 }
 
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none; /* Skjuler dropdown-indholdet som standard */
+    position: absolute;
+    background-color: var(--hvid);
+    color: var(--sort);
+    font-family: Radio Canada,sans-serif;
+    font-weight: 100;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+#dropdown-left{
+    right: 0; /* Justerer positionen til højre */
+}
+
+.navbar li:hover .dropdown-content {
+    display: block; /* Viser dropdown-indholdet, når musen holdes over menuelementet */
+}
+
+.logo {
+    margin-left: 30px; /* Justeret marginen til venstre */
+    margin-right: 30px; /* Ny margin til højre for logoet */
+}
+
+/* Skjul checkbox */
+#toggle {
+    display: none;
+}
+
+/* Skjul overskrifter på mindre skærme */
+@media screen and (max-width: 900px) {
+    .navbar {
+        display: none;
+    }
+    /* Vis burger-ikon */
+    #toggle:checked + .navbar {
+        display: block;
+    }
+}
+
+/* Stil for burger-ikon */
+.burger-icon {
+    display: none;
+    cursor: pointer;
+    margin-right: 40px;
+    font-size: 36px;
+}
+
+/* Tilpasninger til mindre skærme */
+@media screen and (max-width: 900px) {
+    .burger-icon {
+        display: block;
+    }
+}
+
+
+/*style footer*/
+.footer 
 
 
 
