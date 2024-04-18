@@ -24,16 +24,20 @@
    font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
    font-size: 0.8rem;
 }
-h1 {
+h4 {
    font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/
    text-align: center;
-   font-size: 1.5rem;
+   font-size: 1rem;
    font-weight: 500;
-   padding: 2rem;
+   padding-top: 2rem;
+   padding-bottom: 1rem;
 }
 .billeder {
    display: flex;
-   padding-top: -3rem;
+   max-width: 100%;
+   width: 20rem;
+   height: 12rem;
+   gap: 0.4rem;
 }
 
 
