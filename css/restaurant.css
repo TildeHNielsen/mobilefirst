@@ -68,6 +68,24 @@
    right: 10px; /* Justerer positionen til højre */
 }
 
+.dropdown-burgermenu {
+   display: none; /* Skjuler dropdown-indholdet som standard */
+   position: absolute;
+   background-color: var(--hvid);
+   color: var(--sort);
+   font-family: "Radio Canada", sans-serif;
+   font-weight: 100;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   padding: 12px 16px;
+   z-index: 1;
+}
+
+/* Vis dropdown-menuen, når checkboxen er markeret */
+.toggle-checkbox:checked + .burger-icon + .dropdown-burgermenu {
+   display: block;
+}
+
+
 .navbar li:hover .dropdown-content {
    display: block; /* Viser dropdown-indholdet, når musen holdes over menuelementet */
 }
@@ -102,6 +120,7 @@
    margin-right: 40px;
    font-size: 36px;
 }
+
 
 /* Tilpasninger til mindre skærme */
 @media screen and (max-width: 992px) {
