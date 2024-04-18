@@ -153,6 +153,82 @@ input[type=time], select {
  }
 
 @media screen and (min-width: 992px) {
+   /*Main til desktop*/
+   .tekst {
+      font-size: 1.2rem;
+      padding: 2rem;
+   }
+   .tekst2 {
+      padding-top: 1rem;
+      padding-bottom: 3rem;
+      font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
+      font-size: 2rem;
+   }
+   h4 {
+      font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 500;
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+      margin-bottom: -1rem;
+   }
+   .billeder {
+      display: flex;
+      max-width: 100%;
+      width: 44%;
+      height: 44%;
+      gap: 0.4rem;
+      margin-top: 1rem;
+   }
+   
+   /*form*/
+   input[type=text], select {
+      width: 50%;
+      border: 0.15rem solid #EDA058;
+      padding: 0.3rem;
+      margin-left: 23%;
+      margin-top: -10rem;
+   }
+   #besked {
+      width: 50%;
+      border: 0.15rem solid #EDA058;
+      padding: 0.3rem;
+      margin-left: 23%;
+   }
+   input[type=date], select {
+      width: 50%;
+      border: 0.15rem solid #EDA058;
+      padding: 0.3rem;
+      margin-left: 23%;
+      margin-top: -10rem;
+   }
+   input[type=time], select {
+      width: 50%;
+      border: 0.15rem solid #EDA058;
+      padding: 0.3rem;
+      margin-left: 23%;
+      margin-top: -10rem;
+   }
+   #bestil {
+      width: 40%;
+      background-color: #EDA058;
+      padding: 0.6rem;
+      margin-left: 30%;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      color: white;
+      font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
+   }
+   #antal {
+      width: 20%;
+      border: 0.15rem solid #EDA058;
+      padding: 0.3rem;
+      margin-left: 39%;
+      margin-top: -10rem;
+   }
+
+
     /*Footer style til desktop*/
 
  /*størrelse på iconer*/
