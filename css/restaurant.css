@@ -81,7 +81,7 @@
 }
 
 /* Skjul overskrifter på mindre skærme */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
     .navbar {
         display: none;
     }
@@ -100,7 +100,7 @@
 }
 
 /* Tilpasninger til mindre skærme */
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
     .burger-icon {
         display: block;
     }
