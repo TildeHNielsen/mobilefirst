@@ -33,7 +33,10 @@ h1 {
 }
 .billeder {
    display: flex;
-   padding-top: -3rem;
+   max-width: 100%;
+   width: 20rem;
+   height: 12rem;
+   justify-content: space-between;
 }
 
 
