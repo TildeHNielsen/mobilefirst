@@ -31,23 +31,24 @@
 .navbar {
    list-style-type: none;
    display: flex;
+   margin-right: 30px; /* Justerer marginen til højre for navigationsmenuen */
 }
 
 .navbar li {
-   margin-right: 60px;
+   margin-right: 20px; /* Reducerer margenen mellem menuelementerne */
 }
 
 .navbar a {
    text-decoration: none;
    color: var(--sort);
-   font-family: Radio Canada,sans-serif;
+   font-family: Radio Canada, sans-serif;
    font-weight: 400;
    font-size: 24px;
    font-style: normal;
 }
 
-
 .dropdown {
+   position: relative;
    position: relative;
 }
 
