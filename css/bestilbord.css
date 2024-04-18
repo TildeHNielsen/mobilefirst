@@ -17,6 +17,25 @@
   background: transparent;
 }
 
+/*Main css*/
+.tekst {
+   text-align: center;
+   padding: 1rem;
+   font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
+   font-size: 0.8rem;
+}
+h1 {
+   font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/
+   text-align: center;
+   font-size: 1.5rem;
+   font-weight: 500;
+   padding: 2rem;
+}
+.billeder {
+   display: flex;
+   padding-top: -3rem;
+}
+
 
 
 /*Footer style*/
