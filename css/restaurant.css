@@ -1,27 +1,27 @@
 
 :root {
-    --rød:  #B04141;
-    --sort: #0c0c0c;
-    --hvid: rgb(255, 255, 255); 
-    --orange: #EDA058;
-  }
-  
- * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-  }
+   --rød:  #B04141;
+   --sort: #0c0c0c;
+   --hvid: rgb(255, 255, 255); 
+   --orange: #EDA058;
+ }
+ 
+* {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+ }
 
-  .header {
+.header {
    background: white;
    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
    display: flex;
-   justify-content: space-between;
-   align-items: center;
+   justify-content: space-between; /* Justeret til at placere logo og overskrifter i hver sin ende */
+   align-items: center; /* Centrerer elementerne lodret */
    padding: 0 8px;
    top: 0;
    left: 0;
@@ -49,203 +49,149 @@
 
 .dropdown {
    position: relative;
+   position: relative;
 }
 
 .dropdown-content {
-   display: none;
+   display: none; /* Skjuler dropdown-indholdet som standard */
    position: absolute;
    background-color: var(--hvid);
    color: var(--sort);
-   font-family: Radio Canada, sans-serif;
+   font-family: Radio Canada,sans-serif;
    font-weight: 100;
    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
    padding: 12px 16px;
    z-index: 1;
 }
-
-#dropdown-left {
-   right: 0;
+#dropdown-left{
+   right: 0; /* Justerer positionen til højre */
 }
 
 .navbar li:hover .dropdown-content {
-   display: block;
+   display: block; /* Viser dropdown-indholdet, når musen holdes over menuelementet */
 }
 
 .logo {
-   margin-left: 30px;
+   margin-left: 30px; /* Justeret marginen til venstre */
+   margin-right: 30px; /* Ny margin til højre for logoet */
 }
 
-/* Tilføj styling til burgermenu-ikonet */
-.burger-icon {
-   display: none; /* Skjul burgerikonet som standard */
-   cursor: pointer;
+/* Skjul checkbox */
+#toggle {
+   display: none;
 }
 
-/* Vis burgermenu-ikonet kun på mindre skærme */
-@media screen and (max-width: 768px) {
+/* Skjul overskrifter på mindre skærme */
+@media screen and (max-width: 900px) {
    .navbar {
-       display: none; /* Skjul navigationsmenuen på mindre skærme */
+       display: none;
    }
+   /* Vis burger-ikon */
+   #toggle:checked + .navbar {
+       display: block;
+   }
+}
 
+/* Stil for burger-ikon */
+.burger-icon {
+   display: none;
+   cursor: pointer;
+   margin-right: 40px;
+   font-size: 36px;
+}
+
+/* Tilpasninger til mindre skærme */
+@media screen and (max-width: 900px) {
    .burger-icon {
-       display: block; /* Vis burgerikonet på mindre skærme */
-       margin-right: 30px; /* Juster margenen til højre for burgerikonet */
+       display: block;
    }
 }
 
- 
 
-@media screen and (max-width: 600px) {
- /*Style footer mobil*/
+/*Style footer mobil*/
 
+ /*footer udseende*/
  .footer {
-    background-color: var(--rød);
-    padding-top: 5%;
-    padding-bottom: 5%;
- }
+   background-color: var(--rød);
+   padding-top: 3%;
+   padding-bottom: 3%;
+}
 
- /*størrelse på iconer*/
- .iconer {
-    width: auto;
-    height: 15px;
- }
+/*størrelse på iconer*/
+.iconer {
+   width: auto;
+   height: 20px;
+}
 
- .iconerto {
-    order: 1;
- }
+/*For at få iconerne til at være nederst på siden*/
+.iconerto {
+   order: 1;
+}
 
+/*For at fjerne stregen under pga link*/
+.iconer-ingenstreg {
+   text-decoration: none;
+   padding-left: 2px;
+   padding-right: 2px;
+}
 
- /*placering af indhold i footer*/
- .footerdisplay {
-    background-color: var(--rød);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
-
- /*tekst der skal markeres i footer*/
- .fedskriftfooter {
-    font-weight: bolder;
- }
-
- .overskriftfooter {
-    font-size: 0.75rem;
- }
-
- /*font type*/
- .tekstfooter {
-    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
-    color: var(--hvid);
-    line-height: 1.5;
-    font-size: 0.5rem;
-    text-align: center;
- }
+/*placering af indhold i footer*/
+.footerdisplay {
+   background-color: var(--rød);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 
 }
 
-@media screen and (min-width: 600px) {
- /*Style footer større end mobil*/
- .footer {
-    background-color: var(--rød);
-    padding-top: 5%;
-    padding-bottom: 5%;
- }
-
- /*størrelse på iconer*/
- .iconer {
-    width: auto;
-    height: 30px;
- }
-
- /*placering af indhold i footer*/
- .footerdisplay {
-    background-color: var(--rød);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
- }
-
- /*tekst der skal markeres i footer*/
- .fedskriftfooter {
-    font-weight: bolder;
- }
-
- /*font type*/
- .tekstfooter {
-    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
-    color: var(--hvid);
-    line-height: 1.5;
- }
+/*tekst der skal markeres i footer*/
+.fedskriftfooter {
+   font-weight: bolder;
 }
 
-@media screen and (min-width: 768px) {
-    /*Style footer større end mobil op til desktop*/
- .footer {
-    background-color: var(--rød);
-    flex-direction: row;
-    padding-top: 5%;
-    padding-bottom: 5%;
- }
+/*For at lave overskrifterne større end teksten*/
+.overskriftfooter {
+   font-size: 1rem;
+}
 
- /*størrelse på iconer*/
- .iconer {
-    width: auto;
-    height: 30px;
- }
-
- /*placering af indhold i footer*/
- .footerdisplay {
-    background-color: var(--rød);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
- }
-
- /*tekst der skal markeres i footer*/
- .fedskriftfooter {
-    font-weight: bolder;
- }
-
- /*font type*/
- .tekstfooter {
-    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
-    color: var(--hvid);
-    line-height: 1.5;
- }
+/*font type*/
+.tekstfooter {
+   font-family: "Radio Canada", sans-serif; /*font fundet på google*/
+   color: var(--hvid);
+   line-height: 1.5;
+   font-size: 0.75rem;
+   text-align: center;
 }
 
 @media screen and (min-width: 992px) {
-        /*Style footer desktop*/
- .footer {
-    background-color: var(--rød);
-    flex-direction: row;
-    padding-top: 5%;
-    padding-bottom: 5%;
+   /*Style til desktop*/
+
+/*størrelse på iconer*/
+.iconer {
+   width: auto;
+   height: 30px;
+}
+
+/*For at få iconerne til at være i midten på siden øverst placeret i iconernes section*/
+.iconerto {
+   order: unset;
+   align-self: start;
  }
 
- /*størrelse på iconer*/
- .iconer {
-    width: auto;
-    height: 30px;
- }
+/*placering af indhold i footer*/
+.footerdisplay {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
 
- /*placering af indhold i footer*/
- .footerdisplay {
-    background-color: var(--rød);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
- }
+ /*Ændring af overskriftens font size*/
+ .overskriftfooter {
+   font-size: 1.15rem;
+}
 
- /*tekst der skal markeres i footer*/
- .fedskriftfooter {
-    font-weight: bolder;
- }
-
- /*font type*/
- .tekstfooter {
-    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
-    color: var(--hvid);
-    line-height: 1.5;
- }
+/*Ændring af font size*/
+.tekstfooter {
+   font-size: 0.85rem;
+}
 }
