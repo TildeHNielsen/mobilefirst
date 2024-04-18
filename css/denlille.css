@@ -27,7 +27,38 @@
 .billedesection {
    display: flex;
    flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
 }
+
+.stylepile {
+   width: 10px;
+   height: auto;
+}
+
+.billedeforsvind {
+   display: none;
+    }
+
+@media screen and (min-width: 992px) {
+
+ .billedestyle {
+   width: 200px;
+   height: auto;
+}
+
+.billedesection {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.stylepile {
+   width: 10px;
+   height: auto;
+}
+ }
 
 
 /*Footer style*/
