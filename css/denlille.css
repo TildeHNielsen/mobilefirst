@@ -17,6 +17,19 @@
   background: transparent;
 }
 
+/*main style*/
+
+.billedestyle {
+   width: 200 px;
+   height: auto;
+}
+
+.billedesection {
+   display: flex;
+   flex-direction: row;
+}
+
+
 /*Footer style*/
 
   /*footer udseende*/
