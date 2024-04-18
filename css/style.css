@@ -37,7 +37,7 @@
 .restaurant {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     align-content: center;
 }
@@ -52,14 +52,14 @@ h1 {
 .billeder {
     display: flex;
     max-width: 100%;
-    height: 12rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width: auto;
+    height: 10rem;
     margin-bottom: 1rem;
     margin-top: 0.5rem;
 }
 .tekst {
     display: flex;
+    max-width: 100%;
     text-align: center;
     font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
     font-size: 0.8rem;
@@ -67,13 +67,17 @@ h1 {
 .billede1 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     margin-right: 0.5rem;
+    width: auto;
 }
 .billede2 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     margin-left: 0.5rem;
+    width: auto;
 }
 .tekst1 {
     align-self: center;
+    margin-right: 2.5rem;
+    margin-top: -3rem;
 }
 .tekst2 {
     align-self: center;
@@ -94,7 +98,7 @@ h1 {
 
 
 /*Desktop version*/
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 700px) {
     h1 {
         font-size: 2.5rem;
     }
@@ -113,5 +117,14 @@ h1 {
         margin-right: 25rem;
         margin-bottom: 2rem;
 
+    }
+    .tekst1 {
+        margin-right: 9rem;
+        margin-left: -3rem;
+        margin-top: -4rem;
+        align-self: center;
+    }
+    .tekst2 {
+        align-self: center;
     }
 }
