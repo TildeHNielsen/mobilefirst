@@ -1,5 +1,4 @@
 
-/*vores farver til websiderne*/
 :root {
     --rød:  #B04141;
     --sort: #0c0c0c;
@@ -7,7 +6,6 @@
     --orange: #EDA058;
   }
   
-  /*basic til start af websiderne. For at fjerne indbygget margin osv.*/
  * {
     margin: 0;
     padding: 0;
@@ -17,8 +15,6 @@
     vertical-align: baseline;
     background: transparent;
   }
-
-/*header style*/
 
 .header {
     background: white;
@@ -85,7 +81,7 @@
 }
 
 /* Skjul overskrifter på mindre skærme */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
     .navbar {
         display: none;
     }
@@ -104,40 +100,34 @@
 }
 
 /* Tilpasninger til mindre skærme */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 900px) {
     .burger-icon {
         display: block;
     }
 }
 
-/*main style*/
+ 
 
+@media screen and (max-width: 600px) {
+ /*Style footer mobil*/
 
- /*Footer style*/
-
-  /*footer udseende*/
-  .footer {
+ .footer {
     background-color: var(--rød);
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
  }
 
  /*størrelse på iconer*/
  .iconer {
     width: auto;
-    height: 20px;
+    height: 15px;
  }
 
- /*For at få iconerne til at være nederst på siden*/
  .iconerto {
     order: 1;
  }
 
- /*For at fjerne stregen under pga link*/
  .iconer-ingenstreg {
-    text-decoration: none;
-    padding-left: 2px;
-    padding-right: 2px;
  }
 
  /*placering af indhold i footer*/
@@ -146,7 +136,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
  }
 
  /*tekst der skal markeres i footer*/
@@ -154,9 +143,8 @@
     font-weight: bolder;
  }
 
- /*For at lave overskrifterne større end teksten*/
  .overskriftfooter {
-    font-size: 1rem;
+    font-size: 0.75rem;
  }
 
  /*font type*/
@@ -164,12 +152,19 @@
     font-family: "Radio Canada", sans-serif; /*font fundet på google*/
     color: var(--hvid);
     line-height: 1.5;
-    font-size: 0.75rem;
+    font-size: 0.5rem;
     text-align: center;
  }
 
-@media screen and (min-width: 992px) {
-    /*Footer style til desktop*/
+}
+
+@media screen and (min-width: 600px) {
+ /*Style footer større end mobil*/
+ .footer {
+    background-color: var(--rød);
+    padding-top: 5%;
+    padding-bottom: 5%;
+ }
 
  /*størrelse på iconer*/
  .iconer {
@@ -177,26 +172,95 @@
     height: 30px;
  }
 
- /*For at få iconerne til at være i midten på siden øverst placeret i iconernes section*/
- .iconerto {
-    order: unset;
-    align-self: start;
-  }
-
  /*placering af indhold i footer*/
  .footerdisplay {
+    background-color: var(--rød);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
  }
 
-  /*Ændring af overskriftens font size*/
-  .overskriftfooter {
-    font-size: 1.15rem;
+ /*tekst der skal markeres i footer*/
+ .fedskriftfooter {
+    font-weight: bolder;
  }
 
- /*Ændring af font size*/
+ /*font type*/
  .tekstfooter {
-    font-size: 0.85rem;
+    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
+    color: var(--hvid);
+    line-height: 1.5;
+ }
+}
+
+@media screen and (min-width: 768px) {
+    /*Style footer større end mobil op til desktop*/
+ .footer {
+    background-color: var(--rød);
+    flex-direction: row;
+    padding-top: 5%;
+    padding-bottom: 5%;
+ }
+
+ /*størrelse på iconer*/
+ .iconer {
+    width: auto;
+    height: 30px;
+ }
+
+ /*placering af indhold i footer*/
+ .footerdisplay {
+    background-color: var(--rød);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+
+ /*tekst der skal markeres i footer*/
+ .fedskriftfooter {
+    font-weight: bolder;
+ }
+
+ /*font type*/
+ .tekstfooter {
+    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
+    color: var(--hvid);
+    line-height: 1.5;
+ }
+}
+
+@media screen and (min-width: 992px) {
+        /*Style footer desktop*/
+ .footer {
+    background-color: var(--rød);
+    flex-direction: row;
+    padding-top: 5%;
+    padding-bottom: 5%;
+ }
+
+ /*størrelse på iconer*/
+ .iconer {
+    width: auto;
+    height: 30px;
+ }
+
+ /*placering af indhold i footer*/
+ .footerdisplay {
+    background-color: var(--rød);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+ }
+
+ /*tekst der skal markeres i footer*/
+ .fedskriftfooter {
+    font-weight: bolder;
+ }
+
+ /*font type*/
+ .tekstfooter {
+    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
+    color: var(--hvid);
+    line-height: 1.5;
  }
 }
