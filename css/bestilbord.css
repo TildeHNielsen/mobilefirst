@@ -31,13 +31,55 @@ h4 {
    font-weight: 500;
    padding-top: 2rem;
    padding-bottom: 1rem;
+   margin-bottom: -1rem;
 }
 .billeder {
    display: flex;
    max-width: 100%;
-   width: 20rem;
-   height: 12rem;
+   width: 44%;
+   height: 44%;
    gap: 0.4rem;
+   margin-top: 1rem;
+}
+
+/*form*/
+input[type=text], select {
+   width: 50%;
+   border: 0.15rem solid #EDA058;
+   padding: 0.3rem;
+   margin-left: 23%;
+   margin-top: -10rem;
+}
+input[type=date], select {
+   width: 50%;
+   border: 0.15rem solid #EDA058;
+   padding: 0.3rem;
+   margin-left: 23%;
+   margin-top: -10rem;
+}
+input[type=time], select {
+   width: 50%;
+   border: 0.15rem solid #EDA058;
+   padding: 0.3rem;
+   margin-left: 23%;
+   margin-top: -10rem;
+}
+#bestil {
+   width: 40%;
+   background-color: #EDA058;
+   padding: 0.6rem;
+   margin-left: 30%;
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+   color: white;
+   font-family: ;
+}
+#antal {
+   width: 20%;
+   border: 0.15rem solid #EDA058;
+   padding: 0.3rem;
+   margin-left: 39%;
+   margin-top: -10rem;
 }
 
 
