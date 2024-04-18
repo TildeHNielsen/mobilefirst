@@ -89,8 +89,27 @@
        display: block;
    }
 }
+main img {
+   max-width: 100%; /* Begræns billedets bredde til maksimalt 100% af parent containerens bredde */
+   height: auto; /* Gør billedets højde automatisk for at opretholde proportionerne */
+   background-size: cover;
+   display: block; /* Gør billedet til en blok-element, så margin og padding fungerer korrekt */
+   margin: 0 auto; /* Centrer billedet vandret */
+}
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between; /* Juster mellemrummet mellem kortene */
+}
 
-
+.card {
+   width: calc(25% - 10px); /* Beregner bredden for hver card med en margin på 10px */
+   margin-bottom: 20px; /* Juster mellemrummet mellem rækker */
+   background-color: #ffffff;
+   border: 1px solid #ffffff;
+   padding: 20px;
+   box-sizing: border-box; /* Sikrer, at padding ikke påvirker bredden */
+}
 /*Style footer mobil*/
 
  /*footer udseende*/
