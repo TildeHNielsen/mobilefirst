@@ -20,8 +20,8 @@
    background: white;
    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
    display: flex;
-   justify-content: space-between;
-   align-items: center;
+   justify-content: space-between; /* Justeret til at placere logo og overskrifter i hver sin ende */
+   align-items: center; /* Centrerer elementerne lodret */
    padding: 0 8px;
    top: 0;
    left: 0;
@@ -31,66 +31,48 @@
 .navbar {
    list-style-type: none;
    display: flex;
-   margin-right: 30px; /* Justerer marginen til højre for navigationsmenuen */
 }
 
 .navbar li {
-   margin-right: 20px; /* Reducerer margenen mellem menuelementerne */
+   margin-right: 60px;
 }
 
 .navbar a {
    text-decoration: none;
    color: var(--sort);
-   font-family: Radio Canada, sans-serif;
+   font-family: Radio Canada,sans-serif;
    font-weight: 400;
    font-size: 24px;
    font-style: normal;
 }
+
 
 .dropdown {
    position: relative;
 }
 
 .dropdown-content {
-   display: none;
+   display: none; /* Skjuler dropdown-indholdet som standard */
    position: absolute;
    background-color: var(--hvid);
    color: var(--sort);
-   font-family: Radio Canada, sans-serif;
+   font-family: Radio Canada,sans-serif;
    font-weight: 100;
    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
    padding: 12px 16px;
    z-index: 1;
 }
-
-#dropdown-left {
-   right: 0;
+#dropdown-left{
+   right: 0; /* Justerer positionen til højre */
 }
 
 .navbar li:hover .dropdown-content {
-   display: block;
+   display: block; /* Viser dropdown-indholdet, når musen holdes over menuelementet */
 }
 
 .logo {
-   margin-left: 30px;
-}
-
-/* Tilføj styling til burgermenu-ikonet */
-.burger-icon {
-   display: none; /* Skjul burgerikonet som standard */
-   cursor: pointer;
-}
-
-/* Vis burgermenu-ikonet kun på mindre skærme */
-@media screen and (max-width: 768px) {
-   .navbar {
-       display: none; /* Skjul navigationsmenuen på mindre skærme */
-   }
-
-   .burger-icon {
-       display: block; /* Vis burgerikonet på mindre skærme */
-       margin-right: 30px; /* Juster margenen til højre for burgerikonet */
-   }
+   margin-left: 30px; /* Justeret marginen til venstre */
+   margin-right: 30px; /* Ny margin til højre for logoet */
 }
 
  
