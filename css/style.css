@@ -29,42 +29,36 @@
     text-align: center;
     align-self: center;
     padding: 2rem;
-    width: 8rem;
-    height: 7.5rem;
+    width: 7rem;
+    height: 6.5rem;
   }
 
 /*vælg restaurant*/
-
-.restaurant {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
 
 h1 {
     font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/
     text-align: center;
     font-size: 1.5rem;
-    margin: 0.5rem;
     font-weight: 500;
 }
 .billeder {
     display: flex;
     max-width: 100%;
     width: auto;
-    height: 10rem;
+    height: auto;
     margin-bottom: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 .tekst {
-    display: flex;
-    max-width: 100%;
-    text-align: center;
-    font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
-    font-size: 0.8rem;
-    align-self: center;
+   display: flex;
+   font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
+   text-align: center;
+   font-size: 0.7rem;
+   justify-content: space-evenly;
+   position: relative;
 }
 .billede1 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
@@ -75,14 +69,6 @@ h1 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
     margin-left: 0.5rem;
     width: auto;
-}
-.tekst1 {
-    align-self: center;
-    margin-right: 2.5rem;
-    margin-top: -3rem;
-}
-.tekst2 {
-    align-self: center;
 }
 
 /*styling af footer*/
@@ -100,33 +86,33 @@ h1 {
 
 
 /*Desktop version*/
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 992px) {
     h1 {
         font-size: 2.5rem;
     }
     .billeder {
         height: 20rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
         margin-left: 16rem;
         margin-right: 19rem;
     }
     .tekst {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        gap: 2rem;
+        margin-left: -4rem;
+        margin-top: 4rem;
     }
     .ikoner {
         margin-top: 6rem;
         margin-left: 25rem;
         margin-right: 25rem;
         margin-bottom: 2rem;
-
     }
-    .tekst1 {
-        margin-right: 9rem;
-        margin-left: -3rem;
-        margin-top: -4rem;
-        align-self: center;
+    .teskt1 {
+        margin-left: -7rem;
     }
     .tekst2 {
-        align-self: center;
+        margin-left: -15rem;
     }
+
 }
