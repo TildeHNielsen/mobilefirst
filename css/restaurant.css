@@ -18,6 +18,8 @@
     background: transparent;
   }
 
+/*header style*/
+
 .header {
     background: white;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -108,7 +110,10 @@
     }
 }
 
- /*Style footer mobil*/
+/*main style*/
+
+
+ /*Footer style*/
 
   /*footer udseende*/
   .footer {
@@ -164,7 +169,7 @@
  }
 
 @media screen and (min-width: 992px) {
-    /*Style til desktop*/
+    /*Footer style til desktop*/
 
  /*størrelse på iconer*/
  .iconer {
