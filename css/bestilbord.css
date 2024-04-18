@@ -64,7 +64,7 @@ input[type=time], select {
    margin-left: 23%;
    margin-top: -10rem;
 }
-input[type=submit], select {
+#bestil {
    width: 40%;
    background-color: #EDA058;
    padding: 0.6rem;
