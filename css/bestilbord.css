@@ -1,16 +1,18 @@
+/*vores farver til websiderne*/
 :root {
-    --rød:  #B04141;
-    --sort: #0c0c0c;
-    --hvid: rgb(255, 255, 255); 
-    --orange: #EDA058;
-  }
-  
- * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-  }
+  --rød:  #B04141;
+  --sort: #0c0c0c;
+  --hvid: rgb(255, 255, 255); 
+  --orange: #EDA058;
+}
+
+/*basic til start af websiderne. For at fjerne indbygget margin osv.*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
