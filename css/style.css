@@ -27,6 +27,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    align-self: center;
     padding: 2rem;
     width: 8rem;
     height: 7.5rem;
@@ -63,6 +64,7 @@ h1 {
     text-align: center;
     font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
     font-size: 0.8rem;
+    align-self: center;
 }
 .billede1 {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
