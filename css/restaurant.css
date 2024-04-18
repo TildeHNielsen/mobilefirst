@@ -107,69 +107,10 @@
 }
 
 
+ /*Style footer mobil*/
 
-@media screen and (max-width: 600px) {
-    /*Style footer mobil*/
-   
-    /*footer udseende*/
-    .footer {
-       background-color: var(--rød);
-       padding-top: 3%;
-       padding-bottom: 3%;
-    }
-
- /*størrelse på iconer*/
- .iconer {
-    width: auto;
-    height: 15px;
- }
-
- /*For at få iconerne til at være nederst på siden*/
- .iconerto {
-   order: 1;
- }
-
- /*For at fjerne stregen under pga link*/
- .iconer-ingenstreg {
-    text-decoration: none;
-    padding-left: 2px;
-    padding-right: 2px;
- }
-
- /*placering af indhold i footer*/
- .footerdisplay {
-    background-color: var(--rød);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
- }
-
- /*tekst der skal markeres i footer*/
- .fedskriftfooter {
-    font-weight: bolder;
- }
-
- /*For at lave overskrifterne større end teksten*/
- .overskriftfooter {
-    font-size: 0.75rem;
- }
-
- /*font type*/
- .tekstfooter {
-    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
-    color: var(--hvid);
-    line-height: 1.5;
-    font-size: 0.5rem;
-    text-align: center;
- }
-}
-
-
-@media screen and (min-width: 600px) {
- /*Style footer større end mobil*/
-
- /*footer udseende*/
- .footer {
+  /*footer udseende*/
+  .footer {
     background-color: var(--rød);
     padding-top: 3%;
     padding-bottom: 3%;
@@ -220,19 +161,9 @@
     font-size: 0.75rem;
     text-align: center;
  }
-} 
 
-
-@media screen and (min-width: 768px) {
-    /*Style footer større end mobil op til desktop*/
-
- /*udseende på footer*/
- .footer {
-    background-color: var(--rød);
-    flex-direction: row;
-    padding-top: 5%;
-    padding-bottom: 5%;
- }
+@media screen and (min-width: 992px) {
+    /*Style til desktop*/
 
  /*størrelse på iconer*/
  .iconer {
@@ -240,14 +171,7 @@
     height: 30px;
  }
 
-/*Ingen steg under link*/
- .iconer-ingenstreg {
-    text-decoration: none;
-    padding-left: 2px;
-    padding-right: 2px;
- }
-
- /*For at få iconerne til at være nederst på siden*/
+ /*For at få iconerne til at være i midten på siden øverst placeret i iconernes section*/
  .iconerto {
     order: unset;
     align-self: start;
@@ -255,27 +179,18 @@
 
  /*placering af indhold i footer*/
  .footerdisplay {
-    background-color: var(--rød);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
  }
 
- /*tekst der skal markeres i footer*/
- .fedskriftfooter {
-    font-weight: bolder;
- }
-
-  /*For at lave overskrifterne større end teksten*/
+  /*Ændring af overskriftens font size*/
   .overskriftfooter {
     font-size: 1.15rem;
  }
 
- /*font type*/
+ /*Ændring af font size*/
  .tekstfooter {
-    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
-    color: var(--hvid);
-    line-height: 1.5;
     font-size: 0.85rem;
  }
 }
