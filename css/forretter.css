@@ -29,6 +29,7 @@
    left: 0;
    width: 100%;
    position: fixed; /* Fastgør menu-containeren øverst på siden */
+   z-index: 99;
 }
 
 /*styling af navbar til desktop størrelsen*/
