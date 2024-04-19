@@ -4,6 +4,7 @@
   --sort: #0c0c0c;
   --hvid: rgb(255, 255, 255); 
   --orange: #EDA058;
+  --andenorange: #F7D5B6; 
 }
 
 /*basic til start af websiderne. For at fjerne indbygget margin osv.*/
@@ -45,7 +46,7 @@
  }
 
  .bagrundanbefalinger {
-   background-image: url('img\teksturbillede.webp'); 
+   background-color: var(--andenorange);
    background-repeat: no-repeat;
    background-size: cover;
 
@@ -53,22 +54,30 @@
 
  .bagrundanbefalinger {
    display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
+   flex-direction: column;
+   justify-content: center;
    text-align: center;
+   padding-top: 5%;
+   padding-bottom: 5%;
+   margin-left: 5%;
+   margin-right: 5%;
  }
 
  .tykcitat {
    font-weight: bold;
+   font-size: 0.75rem;
+   font-style: italic;
  }
 
  .navnan {
-   font-size: 0.75rem;
+   font-size: 0.50rem;
  }
 
  .anbe {
-   font-size: 0.90;
+   font-size: 0.60rem;
  }
+
+   
 
  @media screen and (min-width: 992px) {
 
@@ -91,6 +100,25 @@
 
  .billedeforsvind {
    display: contents;
+ }
+
+ .bagrundanbefalinger {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   text-align: center;
+ }
+
+ .navnan {
+   font-size: 0.75rem;
+ }
+
+ .anbe {
+   font-size: 0.80rem;
+ }
+
+ .tykcitat {
+   font-size: 1rem;
  }
  }
 
