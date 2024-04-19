@@ -4,6 +4,7 @@
   --sort: #0c0c0c;
   --hvid: rgb(255, 255, 255); 
   --orange: #EDA058;
+  --andenorange: #F7D5B6; 
 }
 
 /*basic til start af websiderne. For at fjerne indbygget margin osv.*/
@@ -325,6 +326,12 @@ input[type=time], select {
    color: white;
    font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
 }
+
+#bestil:hover {
+   cursor: pointer;
+   background-color: var(--andenorange);
+}
+
 #antal {
    width: 20%;
    border: 0.15rem solid #EDA058;
