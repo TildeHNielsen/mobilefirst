@@ -19,45 +19,53 @@
 
 /*main style*/
 
-.billedestyle {
+ .billedestyle {
    width: 200px;
    height: auto;
-}
+ }
 
-.billedesection {
+ .billedesection {
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
    align-items: center;
-}
+ }
 
-.stylepile {
+ .stylepile {
    width: 10px;
    height: auto;
-}
+ }
 
-.billedeforsvind {
+ .billedeforsvind {
    display: none;
     }
 
-@media screen and (min-width: 992px) {
+ .velkommenforside {
+   font-family: "Radio Canada", sans-serif; /*font fundet på google*/
+ }
+
+ @media screen and (min-width: 992px) {
 
  .billedestyle {
    width: 200px;
    height: auto;
-}
+ }
 
-.billedesection {
+ .billedesection {
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
    align-items: center;
-}
+ }
 
-.stylepile {
+ .stylepile {
    width: 10px;
    height: auto;
-}
+ }
+
+ .billedeforsvind {
+   display: contents;
+ }
  }
 
 
