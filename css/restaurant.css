@@ -89,7 +89,7 @@
    font-size: 20px;
 }
 
-/* Vis dropdown-menuen, når checkboxen er markeret */
+/* Viser dropdown-menuen, når checkboxen er markeret */
 .toggle-checkbox:checked + .burger-icon + .dropdown-burgermenu {
    display: block;
 }
@@ -97,6 +97,30 @@
 
 .navbar li:hover .dropdown-content {
    display: block; /* Viser dropdown-indholdet, når musen holdes over menuelementet */
+}
+
+/* Stil for submenu i dropdown */
+.submenu:hover .sub-dropdown-content {
+   display: block;
+}
+
+.sub-dropdown-content {
+   display: none;
+   position: absolute;
+   top: 0;
+   left: 100%;
+   background-color: var(--hvid);
+   color: var(--sort);
+   font-family: Radio Canada, sans-serif;
+   font-weight: 100;
+   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+   padding: 12px 16px;
+   z-index: 1;
+}
+
+/* Tilpas dette til dine behov */
+.submenu {
+   position: fixed;
 }
 
 .logo {
