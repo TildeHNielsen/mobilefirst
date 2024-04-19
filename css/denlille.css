@@ -195,6 +195,7 @@
 
 /*main style*/
 
+/*Det øverste billede på siden style*/
 .centered {
    position: absolute;
    top: 50%;
@@ -215,6 +216,7 @@
    height: 100%;
 }
 
+/*velkommenteksten*/
 .velkommenforside {
    margin-left: 7%;
    margin-right: 7%;
@@ -226,11 +228,13 @@
    font-size: 1.5rem;
 }
 
+/*padding på siden, så der kommer mere whitespace mellem tingene*/
 .mellemrum {
-   padding-top: 15%;
-   padding-bottom: 15%;
+   padding-top: 10%;
+   padding-bottom: 10%;
 }
 
+/*billederne i "kausellen + pilene"*/
  .billedestyle {
    width: 200px;
    height: auto;
@@ -248,22 +252,20 @@
    height: auto;
  }
 
+ /*de to billeder der skal forsvinde når skærmen er mobilstørrelse*/
  .billedeforsvind {
    display: none;
     }
 
+   /*så fonten er det samme + padding pga navbar*/
  main {
    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
    padding-top: 100px;
  }
 
+ /*style af anmeldelser*/
  .bagrundanbefalinger {
    background-color: var(--andenorange);
-   background-repeat: no-repeat;
-   background-size: cover;
- }
-
- .bagrundanbefalinger {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -323,14 +325,17 @@
   padding-bottom: 5%;
  }
 
+ /*teksten til desktop størrelse bliver fjernet*/
  #storskærmtekst {
    display: none;
  }
 
+ /*padding til whitespace*/
  .navnetkow {
-padding-top: 15%
+padding-top: 10%
  }
 
+ /*style af bestil bord nu knappen*/
  #bestil {
    width: 40%;
    background-color: #EDA058;
@@ -349,36 +354,22 @@ padding-top: 15%
 
  @media screen and (min-width: 992px) {
 
+   /*desktop teksten vises - og vises i en lang tekst*/
    #storskærmtekst {
       display: contents;
       white-space: nowrap; 
    }
-
+/*teksten til mobil version forsvinder*/
    #lilleskærmtekst {
       display: none;
    }
 
- .billedestyle {
-   width: 200px;
-   height: auto;
- }
-
- .billedesection {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   align-items: center;
- }
-
- .stylepile {
-   width: 10px;
-   height: auto;
- }
-
+   /*de to ekstra billeder vises i "kausellen"*/
  .billedeforsvind {
    display: contents;
  }
 
+ /*anmeldelserne vises i row i stedet for column*/
  .bagrundanbefalinger {
    display: flex;
    flex-direction: row;
@@ -386,6 +377,7 @@ padding-top: 15%
    text-align: center;
  }
 
+ /*font size ændres til desktop version*/
  .navnan {
    font-size: 0.75rem;
  }
@@ -397,14 +389,16 @@ padding-top: 15%
  .tykcitat {
    font-size: 1rem;
  }
+
  .centered {
    font-size: 4.5rem;
  }
 
+ /*stjerneiconerne bliver større i desktop version*/
  .stjerneicon {
    width: 20px;
  }
-
+/*font size ændres under stjerneiconerne*/
  .tyktekststjerne {
    font-size: 1rem;
  }
@@ -412,6 +406,7 @@ padding-top: 15%
  .tyndtekststjerne {
    font-size: 0.80rem;
  }
+ 
  }
 
 /*Footer style*/
