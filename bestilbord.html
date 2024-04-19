@@ -18,14 +18,15 @@
         
     </header>
     <main>
-        <figure class="top">
+    <section class="topbillede">
+        <picture class="top">
             <source type="image/webp" srcset="img/bestilbordstort.webp">
             <source type="image/jpg" srcset="img/bestilbordstort.jpg">
-        <section class="topbillede">
-           <img src="img/bestilbordstort.jpg" alt="bestilbord" width="100%" height="100%"></a>
+        
+           <img class="stortbillede" src="img/bestilbordstort.jpg" alt="bestilbord"></picture>
            <div class="centered">BESTIL BORD</div>
         </section>
-        </figure>
+    
 
         <article class="tekst">
             <p>Vær sikker på at der er plads i restauranten ved at ringe <br>
@@ -37,20 +38,24 @@
         <section>
             <h4>Vælg restaurant</h4>
         </section>
-        <figure class="billeder">
+        <section class="billeder">
+        <picture>
             <source type="image/webp" srcset="img/denlillelille.webp">
             <source type="image/png" srcset="img/denlillelille.png">
 
-            <img class="billede1" src="img/denlillelille.png" alt="rastaurantvalg" width="35%" height="35%"></a>
-            <div class="overskrift1">Den 'lille'<br> Kowloon</div>
-
+            <img class="billede1" src="img/denlillelille.png" alt="restaurantvalg">
+        </picture>
+        <picture>
             <source type="image/webp" srcset="img/restaurantlille.webp">
             <source type="image/png" srcset="img/restaurantlille.png">
 
-            <img class="billede2" src="img/restaurantlille.png" alt="rastaurantvalg" width="35%" height="35%"></a>
-            <div class="overskrift2">Restaurant <br>Kowloon</div>
-        </figure>
-        <form action="">
+            <img class="billede2" src="img/restaurantlille.png" alt="restaurantvalg">
+        </picture>
+            <p class="overskrift1">Den 'lille'<br> Kowloon</p>
+            <p class="overskrift2">Restaurant Kowloon</p>
+        </section>
+
+        <form action="formaction.html">
             <label for="antal"><h4>Antal gæster:</h4></label><br>
             <select id="antal" name="antal"><br>
                 <option value="1">1</option>
