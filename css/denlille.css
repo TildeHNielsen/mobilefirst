@@ -218,7 +218,19 @@
 .velkommenforside {
    margin-left: 7%;
    margin-right: 7%;
+   line-height: 1.5;
 }
+
+.paddingvelkommen {
+   padding-bottom: 10px;
+   font-size: 1.5rem;
+}
+
+.mellemrum {
+   padding-top: 15%;
+   padding-bottom: 15%;
+}
+
  .billedestyle {
    width: 200px;
    height: auto;
@@ -249,8 +261,6 @@
    background-color: var(--andenorange);
    background-repeat: no-repeat;
    background-size: cover;
-   border-radius: 2%;
-
  }
 
  .bagrundanbefalinger {
@@ -259,7 +269,7 @@
    justify-content: center;
    text-align: center;
    padding-top: 5%;
-   padding-bottom: 5%;
+   
    margin-left: 7%;
    margin-right: 7%;
  }
@@ -278,8 +288,48 @@
    font-size: 0.60rem;
  }
 
+ .stjerneicon {
+   width: 15px;
+   padding-left: 4px;
+   padding-right: 4px;
+   padding-top: 5%;
+ }
+
+ .stjerneiconplacering {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: var(--andenorange);
+   margin-left: 7%;
+   margin-right: 7%;
+   padding-bottom: 1.5%;
+ }
+
+ .tyktekststjerne {
+   font-weight: bold;
+   padding-bottom: 1%;
+   line-height: 2;
+   font-size: 0.75rem;
+ }
+
+ .tyndtekststjerne {
+   font-size: 0.70rem;
+ }
+
+ .stjernerplacering {
+  text-align: center;
+  background-color: var(--andenorange);
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-bottom: 5%;
+ }
+
  #storskærmtekst {
    display: none;
+ }
+
+ .navnetkow {
+padding-top: 15%
  }
 
  #bestil {
@@ -287,8 +337,8 @@
    background-color: #EDA058;
    padding: 0.6rem;
    margin-left: 30%;
-   margin-top: 3rem;
-   margin-bottom: 3rem;
+   margin-top: 5rem;
+   margin-bottom: 1rem;
    color: white;
    font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
 }
@@ -350,8 +400,19 @@
  .centered {
    font-size: 4.5rem;
  }
+
+ .stjerneicon {
+   width: 20px;
  }
 
+ .tyktekststjerne {
+   font-size: 1rem;
+ }
+
+ .tyndtekststjerne {
+   font-size: 0.80rem;
+ }
+ }
 
 /*Footer style*/
 
