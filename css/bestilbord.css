@@ -18,17 +18,25 @@
 }
 
 /*Main css*/
+
+/*Tekst på billede*/
 .centered {
    position: absolute;
    top: 50%;
    left: 50%;
    transform: translate(-50%, -50%);
+   color: black;
+   font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
+   font-weight: 500;
+   font-size: 1.5rem;
  }
  .topbillede {
    position: relative;
    text-align: center;
-   color: white;
  }
+
+/**/
+
 .tekst {
    text-align: center;
    padding: 1rem;
@@ -56,7 +64,33 @@ h4 {
    justify-content: center;
    gap: 0.3rem;
    padding-top: 1rem;
+   position: relative;
+   text-align: center;
 }
+.billede1 {
+   border-radius: 0.5rem;
+}
+.billede2 {
+   border-radius: 0.5rem;
+}
+.overskrift1 {
+   position: absolute;
+   top: 50%;
+   left: 10%;
+   color: black;
+   font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
+   font-weight: 500;
+   font-size: 1rem;
+ }
+ .overskrift2 {
+   position: absolute;
+   top: 50%;
+   left: 70%;
+   color: black;
+   font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
+   font-weight: 500;
+   font-size: 1rem;
+ }
 
 /*form*/
 input[type=text], select {
@@ -163,6 +197,9 @@ input[type=time], select {
 
 @media screen and (min-width: 992px) {
    /*Main til desktop*/
+   .centered {
+      font-size: 4.5rem;
+    }
    .tekst {
       font-size: 1.2rem;
       padding: 2rem;
