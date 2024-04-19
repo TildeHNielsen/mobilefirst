@@ -40,8 +40,34 @@
    display: none;
     }
 
- .velkommenforside {
+ main {
    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
+ }
+
+ .bagrundanbefalinger {
+   background-image: url('img\teksturbillede.webp'); 
+   background-repeat: no-repeat;
+   background-size: cover;
+
+ }
+
+ .bagrundanbefalinger {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   text-align: center;
+ }
+
+ .tykcitat {
+   font-weight: bold;
+ }
+
+ .navnan {
+   font-size: 0.75rem;
+ }
+
+ .anbe {
+   font-size: 0.90;
  }
 
  @media screen and (min-width: 992px) {
