@@ -195,6 +195,30 @@
 
 /*main style*/
 
+.centered {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: black;
+   font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
+   font-weight: 500;
+   font-size: 1.5rem;
+ }
+ .topbillede {
+   position: relative;
+   text-align: center;
+ }
+
+ .stortbillede {
+   width: 100%;
+   height: 100%;
+}
+
+.velkommenforside {
+   margin-left: 7%;
+   margin-right: 7%;
+}
  .billedestyle {
    width: 200px;
    height: auto;
@@ -218,12 +242,14 @@
 
  main {
    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
+   padding-top: 100px;
  }
 
  .bagrundanbefalinger {
    background-color: var(--andenorange);
    background-repeat: no-repeat;
    background-size: cover;
+   border-radius: 2%;
 
  }
 
@@ -234,8 +260,8 @@
    text-align: center;
    padding-top: 5%;
    padding-bottom: 5%;
-   margin-left: 5%;
-   margin-right: 5%;
+   margin-left: 7%;
+   margin-right: 7%;
  }
 
  .tykcitat {
@@ -252,9 +278,35 @@
    font-size: 0.60rem;
  }
 
-   
+ #storskærmtekst {
+   display: none;
+ }
+
+ #bestil {
+   width: 40%;
+   background-color: #EDA058;
+   padding: 0.6rem;
+   margin-left: 30%;
+   margin-top: 3rem;
+   margin-bottom: 3rem;
+   color: white;
+   font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
+}
+
+#bestil:hover {
+   cursor: pointer;
+}
 
  @media screen and (min-width: 992px) {
+
+   #storskærmtekst {
+      display: contents;
+      white-space: nowrap; 
+   }
+
+   #lilleskærmtekst {
+      display: none;
+   }
 
  .billedestyle {
    width: 200px;
@@ -294,6 +346,9 @@
 
  .tykcitat {
    font-size: 1rem;
+ }
+ .centered {
+   font-size: 4.5rem;
  }
  }
 
