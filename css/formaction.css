@@ -246,7 +246,10 @@
  }
  /*main CSS*/
  .tekst {
-   padding: 10rem;
+   padding-top: 10rem;
+   padding-bottom: 3rem;
+   padding-left: 2rem;
+   padding-right: 2rem;
    text-align: center;
    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
  }
