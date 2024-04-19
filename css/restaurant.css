@@ -120,7 +120,7 @@
 
 /* Tilpas dette til dine behov */
 .submenu {
-   position: relative;
+   position: fixed;
 }
 
 .logo {
