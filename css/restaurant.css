@@ -4,7 +4,7 @@
    --sort: #0c0c0c;
    --hvid: rgb(255, 255, 255); 
    --orange: #EDA058;
-   --grå: rgb(157, 157, 157); 
+   --grå:#d3d3d3 ; 
  }
  
 * {
@@ -17,6 +17,7 @@
    background: transparent;
  }
 
+/*styling af header*/
 .header {
    background: white;
    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
@@ -30,6 +31,7 @@
    position: fixed; /* Fastgør menu-containeren øverst på siden */
 }
 
+/*styling af navbar til desktop størrelsen*/
 .navbar {
    list-style-type: none;
    display: flex;
@@ -43,11 +45,12 @@
    text-decoration: none;
    color: var(--sort);
    font-family: Radio Canada,sans-serif;
-   font-weight: 400;
-   font-size: 24px;
+   font-weight: 350;
+   font-size: 20px;
    font-style: normal;
 }
 
+/*styling af dropdown til dektop størrelsen*/
 .dropdown {
    position: relative;
 }
@@ -57,19 +60,24 @@
    position: absolute;
    background-color: var(--hvid);
    color: var(--sort);
-   font-family: "Radio Canada",sans-serif;
-   font-weight: 100;
-   font-style:normal;
-   font-size: 20px;
    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
    padding: 12px 16px;
    z-index: 1;
    line-height: 1.5;
 }
+
+.dropdown-content a{
+   font-family: "Radio Canada",sans-serif;
+   font-weight: 100;
+   font-style:normal;
+   font-size: 20px;
+}
+
 #dropdown-left{
    right: 10px; /* Justerer positionen til højre */
 }
 
+/*styling af burgermenu*/
 .dropdown-burgermenu {
    display: none; /* Skjuler dropdown-indholdet som standard */
    position:fixed;
@@ -90,25 +98,27 @@
    font-size: 20px;
 }
 
-/* Viser dropdown-menuen, når checkboxen er markeret */
+/*Tilføjer hover effekt når man trykker på den valgte overskrift*/
+.hover-effekt:hover {
+   background-color:var(--grå); 
+}
+
+/* Viser/skjuler dropdown-menuen, når man trykker på burger iconen*/
 .toggle-checkbox:checked + .burger-icon + .dropdown-burgermenu {
    display: block;
 }
 
-
+/* Viser dropdown-indholdet, når musen holdes over menuelementet */
 .navbar li:hover .dropdown-content {
-   display: block; /* Viser dropdown-indholdet, når musen holdes over menuelementet */
+   display: block; 
 }
 
-.dropdown-content:hover {
-   background-color: lightgray; 
-}
-
-/* Stil for submenu i dropdown */
+/* Viser sub-dropdown menu, når musen holdes over*/
 .submenu:hover .sub-dropdown-content {
    display: block;
 }
 
+/*Styling af sub-dropdown-content*/
 .sub-dropdown-content {
    display:none;
    position: absolute;
@@ -127,6 +137,7 @@
    position:relative;
 }
 
+
 #sub-dropdown-content1{
    position:fixed;
    display: none;
@@ -141,27 +152,28 @@
 .logo {
    margin-left: 30px; /* Justeret marginen til venstre for logoet */
    margin-right: 30px; /* Juster marginen til højre for logoet */
-   margin-top: 10px; /* Juster marginen for toppen af logoet i navbar*/
+   margin-top: 20px; /* Juster marginen for toppen af logoet i navbar*/
    margin-bottom: 20px; /* Juster marginen under logoet i navbar*/
 }
 
-/* Skjul checkbox */
+/* Skjuler checkbox */
 #toggle {
    display: none;
 }
 
-/* Skjul overskrifter på mindre skærme */
+/* Skjuler overskrifter på mindre skærme */
 @media screen and (max-width: 992px) {
    .navbar {
        display: none;
    }
-   /* Vis burger-ikon */
+
+/* Viser burger-ikon */
    #toggle:checked + .navbar {
        display: block;
    }
 }
 
-/* Stil for burger-ikon */
+/* Styling af burger-ikon */
 .burger-icon {
    display: none;
    cursor: pointer;
@@ -176,7 +188,6 @@
        display: block;
    }
 }
-
 
 /*Style footer mobil*/
 
