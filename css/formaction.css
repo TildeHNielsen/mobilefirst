@@ -244,7 +244,17 @@
     font-size: 0.75rem;
     text-align: center;
  }
- 
+ /*main CSS*/
+ .tekst {
+   padding: 10rem;
+   text-align: center;
+   font-family: "Radio Canada", sans-serif; /*font fundet på google*/
+ }
+ h1 {
+   font-size: 1.5rem;
+ }
+
+
  @media screen and (min-width: 992px) {
     /*Style til desktop*/
  
