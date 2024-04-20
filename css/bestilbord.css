@@ -5,6 +5,7 @@
   --hvid: rgb(255, 255, 255); 
   --orange: #EDA058;
   --andenorange: #F7D5B6; 
+  --grå:#d3d3d3;
 }
 
 /*basic til start af websiderne. For at fjerne indbygget margin osv.*/
@@ -209,6 +210,12 @@
    position: relative;
    text-align: center;
  }
+ 
+ /*teksten til desktop størrelse bliver fjernet*/
+ #storskærmtekst {
+   display: none;
+ }
+
 
 /**/
 
@@ -341,6 +348,20 @@ input[type=time], select {
    margin-top: -10rem;
 }
 
+/* Tilpasninger til mindre skærme */
+@media screen and (min-width: 992px) {
+
+   /*desktop teksten vises - og vises i en lang tekst*/
+   #storskærmtekst {
+      display: contents;
+      
+   }
+/*teksten til mobil version forsvinder*/
+   #lilleskærmtekst {
+      display: none;
+   }
+
+}
 /*Footer style*/
 
   /*footer udseende*/

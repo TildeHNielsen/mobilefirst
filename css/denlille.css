@@ -4,6 +4,7 @@
   --sort: #0c0c0c;
   --hvid: rgb(255, 255, 255); 
   --orange: #EDA058;
+  --grå:#d3d3d3;
   --andenorange: #F7D5B6; 
 }
 
@@ -206,6 +207,7 @@
    font-weight: 500;
    font-size: 2rem;
    font-weight: bolder;
+   
  }
  .topbillede {
    position: relative;
@@ -228,6 +230,8 @@
 .paddingvelkommen {
    padding-bottom: 10px;
    font-size: 1.5rem;
+  
+
 }
 
 /*padding på siden, så der kommer mere whitespace mellem tingene*/
@@ -355,7 +359,7 @@ padding-top: 10%
    padding: 0.6rem;
    margin-left: 30%;
    margin-top: 5rem;
-   margin-bottom: 1rem;
+   margin-bottom: 5rem;
    color: white;
    font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
 }
@@ -422,7 +426,7 @@ padding-top: 10%
  .tyktekststjerne {
    font-size: 1rem;
  }
-
+ 
  .tyndtekststjerne {
    font-size: 0.80rem;
  }

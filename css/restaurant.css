@@ -4,7 +4,8 @@
    --sort: #0c0c0c;
    --hvid: rgb(255, 255, 255); 
    --orange: #EDA058;
-   --grå:#d3d3d3 ; 
+   --grå:#d3d3d3; 
+   --andenorange: #F7D5B6; 
  }
  
 * {
@@ -189,6 +190,242 @@
        display: block;
    }
 }
+
+/*main style*/
+
+/*Det øverste billede på siden style*/
+.centered {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: black;
+   font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
+   font-weight: 500;
+   font-size: 2rem;
+   font-weight: bolder;
+ }
+ .topbillede {
+   position: relative;
+   text-align: center;
+ }
+
+ .stortbillede {
+  width: 100%;
+   height: 100%;
+}
+
+/*velkommenteksten*/
+.velkommenforside {
+   margin-left: 7%;
+   margin-right: 7%;
+   line-height: 1.5;
+   font-size: 0.75rem;
+}
+
+.paddingvelkommen {
+   padding-bottom: 10px;
+   font-size: 1.5rem;
+}
+
+/*padding på siden, så der kommer mere whitespace mellem tingene*/
+.mellemrum {
+   padding-top: 3%;
+   padding-bottom: 10%;
+}
+
+/*billederne i "kausellen + pilene"*/
+ .billedestyle {
+   width: 200px;
+   height: auto;
+ }
+
+ .billedesection {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   padding-bottom: 10%;
+ }
+
+ .stylepile {
+   width: 10px;
+   height: auto;
+ }
+
+ .linkforretterstyle {
+   text-decoration: none;
+   color: var(--sort);
+ }
+
+ .hoverstyletekst:hover {
+text-decoration: underline;
+cursor: pointer;
+ }
+
+ /*de to billeder der skal forsvinde når skærmen er mobilstørrelse*/
+ .billedeforsvind {
+   display: none;
+    }
+
+   /*så fonten er det samme + padding pga navbar*/
+ main {
+   font-family: "Radio Canada", sans-serif; /*font fundet på google*/
+   padding-top: 100px;
+ }
+
+ /*style af anmeldelser*/
+ .bagrundanbefalinger {
+   background-color: var(--andenorange);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+   padding-top: 5%;
+   margin-left: 7%;
+   margin-right: 7%;
+ }
+
+ .tykcitat {
+   font-weight: bold;
+   font-size: 0.75rem;
+   font-style: italic;
+ }
+
+ .navnan {
+   font-size: 0.50rem;
+ }
+
+ .anbe {
+   font-size: 0.60rem;
+ }
+
+ .stjerneicon {
+   width: 15px;
+   padding-left: 4px;
+   padding-right: 4px;
+   padding-top: 5%;
+ }
+
+ .stjerneiconplacering {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: var(--andenorange);
+   margin-left: 7%;
+   margin-right: 7%;
+   padding-bottom: 1.5%;
+ }
+
+ .tyktekststjerne {
+   font-weight: bold;
+   padding-bottom: 1%;
+   line-height: 2;
+   font-size: 0.75rem;
+ }
+
+ .tyndtekststjerne {
+   font-size: 0.70rem;
+ }
+
+ .stjernerplacering {
+  text-align: center;
+  background-color: var(--andenorange);
+  margin-left: 7%;
+  margin-right: 7%;
+  padding-bottom: 5%;
+ }
+
+ /*teksten til desktop størrelse bliver fjernet*/
+ #storskærmtekst {
+   display: none;
+ }
+
+ /*padding til whitespace*/
+ .navnetkow {
+padding-top: 10%
+ }
+
+ /*style af bestil bord nu knappen*/
+ #bestil {
+   width: 40%;
+   background-color: #EDA058;
+   padding: 0.6rem;
+   margin-left: 30%;
+   margin-top: 5rem;
+   margin-bottom: 5rem;
+   color: white;
+   font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
+}
+
+#bestil:hover {
+   cursor: pointer;
+   background-color: var(--andenorange);
+}
+
+ @media screen and (min-width: 992px) {
+
+   /*desktop teksten vises - og vises i en lang tekst*/
+   #storskærmtekst {
+      display: contents;
+      white-space: nowrap; 
+   }
+/*teksten til mobil version forsvinder*/
+   #lilleskærmtekst {
+      display: none;
+   }
+
+   /*de to ekstra billeder vises i "kausellen"*/
+ .billedeforsvind {
+   display: contents;
+ }
+
+ /*anmeldelserne vises i row i stedet for column*/
+ .bagrundanbefalinger {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   text-align: center;
+ }
+
+ /*font size ændres til desktop version*/
+ .navnan {
+   font-size: 0.75rem;
+ }
+
+ .anbe {
+   font-size: 0.80rem;
+ }
+
+ .tykcitat {
+   font-size: 1rem;
+ }
+
+ .centered {
+   font-size: 4.5rem;
+ }
+
+ .velkommenforside {
+   font-size: 1rem;
+ }
+
+ .paddingvelkommen {
+   font-size: 3rem;
+}
+ /*stjerneiconerne bliver større i desktop version*/
+ .stjerneicon {
+   width: 20px;
+ }
+/*font size ændres under stjerneiconerne*/
+ .tyktekststjerne {
+   font-size: 1rem;
+ }
+
+ .tyndtekststjerne {
+   font-size: 0.80rem;
+ }
+
+ }
 
 /*Style footer mobil*/
 
