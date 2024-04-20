@@ -202,7 +202,8 @@
    color: black;
    font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
    font-weight: 500;
-   font-size: 1.5rem;
+   font-size: 2rem;
+   font-weight: bolder;
  }
  .topbillede {
    position: relative;
