@@ -299,31 +299,33 @@ main {
 /*form*/
 input[type=text], select {
    width: 50%;
-   border: 0.15rem solid #EDA058;
+   border-bottom: 0.05rem solid #EDA058;
    padding: 0.3rem;
    margin-left: 23%;
    margin-top: -10rem;
 }
 #besked {
    width: 50%;
-   border: 0.15rem solid #EDA058;
+   border: 0.05rem solid #EDA058;
    padding: 0.3rem;
    margin-left: 23%;
 }
 input[type=date], select {
    width: 50%;
-   border: 0.15rem solid #EDA058;
+   border-bottom: 0.05rem solid #EDA058;
    padding: 0.3rem;
    margin-left: 23%;
    margin-top: -10rem;
 }
 input[type=time], select {
    width: 50%;
-   border: 0.15rem solid #EDA058;
+   border-bottom: 0.05rem solid #EDA058;
    padding: 0.3rem;
    margin-left: 23%;
    margin-top: -10rem;
 }
+
+
 #bestil {
    width: 40%;
    background-color: #EDA058;
@@ -342,7 +344,7 @@ input[type=time], select {
 
 #antal {
    width: 20%;
-   border: 0.15rem solid #EDA058;
+   border-bottom: 0.05rem solid #EDA058;
    padding: 0.3rem;
    margin-left: 39%;
    margin-top: -10rem;

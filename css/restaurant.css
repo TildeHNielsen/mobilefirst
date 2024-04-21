@@ -204,22 +204,16 @@
    font-weight: 500;
    font-size: 2rem; 
    font-weight: bolder;
-   
-  
-   
  }
+
  .topbillede {
    position: relative;
    text-align: center;
-   
- 
  }
 
  .stortbillede {
   width: 100%;
-   height: 100%;
-   
- 
+   height: 100%; 
 }
 
 /*velkommenteksten*/
@@ -278,7 +272,7 @@ cursor: pointer;
    /*så fonten er det samme + padding pga navbar*/
  main {
    font-family: "Radio Canada", sans-serif; /*font fundet på google*/
-   padding-top: 100px;
+   padding-top: 120px;
  }
 
  /*style af anmeldelser*/
