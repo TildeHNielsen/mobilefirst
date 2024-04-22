@@ -18,6 +18,12 @@
    background: transparent;
  }
 
+ .bebas-neue-regular {
+   font-family: "Bebas Neue", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+ }
+
 /*styling af header*/
 .header {
    background: white;
@@ -201,12 +207,22 @@
    left: 50%;
    transform: translate(-50%, -50%);
    color: black;
+<<<<<<< HEAD
    font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
    font-weight: 500;
    font-size: 2rem; 
    font-weight: bolder;
    
 }
+=======
+   font-family: "Bebas Neue", sans-serif;
+   font-weight: lighter;
+   font-style: normal;
+
+  
+ }
+
+>>>>>>> 088e3e83346a3091538b1b2226b4cd3d8bda680e
  .topbillede {
    position: relative;
    text-align: center;
@@ -346,6 +362,10 @@ cursor: pointer;
    display: none;
  }
 
+ #lilleskærmtekst{
+   font-size: 50px;
+ }
+
  /*padding til whitespace*/
  .navnetkow {
 padding-top: 10%
@@ -374,6 +394,8 @@ padding-top: 10%
    #storskærmtekst {
       display: contents;
       white-space: nowrap; 
+      font-size: 140px;
+      
    }
 /*teksten til mobil version forsvinder*/
    #lilleskærmtekst {

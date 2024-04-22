@@ -203,10 +203,8 @@
    left: 50%;
    transform: translate(-50%, -50%);
    color: black;
-   font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
-   font-weight: 500;
-   font-size: 2rem;
-   font-weight: bolder;
+   font-family: "Bebas Neue", sans-serif; /*hentet fra Google Fonts*/;
+
    
  }
  .topbillede {
@@ -364,6 +362,10 @@ padding-top: 10%
    font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
 }
 
+#lilleskærmtekst{
+  font-size: 50px;
+}
+
 #bestil:hover {
    cursor: pointer;
    background-color: var(--andenorange);
@@ -375,6 +377,7 @@ padding-top: 10%
    #storskærmtekst {
       display: contents;
       white-space: nowrap; 
+      font-size: 140px;
    }
 /*teksten til mobil version forsvinder*/
    #lilleskærmtekst {
