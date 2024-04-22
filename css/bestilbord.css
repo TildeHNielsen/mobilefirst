@@ -201,9 +201,6 @@
    left: 50%;
    transform: translate(-50%, -50%);
    color: black;
-   font-weight: 500;
-   font-size: 1.7rem;
-   font-weight: bolder;
    padding-top: 0.2rem;
    font-family: "Bebas Neue", sans-serif; /*hentet fra Google Fonts*/;
  }
@@ -364,7 +361,7 @@ input[type=time], select {
 }
 
 #lilleskærmtekst{
-   font-size: 50px;
+   font-size: 2rem;
 }
 
 /* Tilpasninger til mindre skærme */

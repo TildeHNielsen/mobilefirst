@@ -203,9 +203,7 @@
    left: 50%;
    transform: translate(-50%, -50%);
    color: black;
-   font-weight: 500;
-   font-size: 1.7rem;
-   font-weight: bolder;
+   font-size: 1rem;
    padding-top: 1rem;
    font-family: "Bebas Neue", sans-serif; /*hentet fra Google Fonts*/;
 
@@ -368,7 +366,7 @@ padding-top: 10%
 }
 
 #lilleskærmtekst{
-  font-size: 50px;
+  font-size: 2rem;
 }
 
 #bestil:hover {
