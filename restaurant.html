@@ -19,7 +19,12 @@
     <header>
         <div class="header">
             <a class="logo" href="/index.html">
-                <img src="/img/kowloonlogo.png" alt="Kowloon logo" height="80px">
+                <picture>
+                    <source type="image/webp" srcset="img/kowloonlogo.webp">
+                    <source type="image/jpg" srcset="/img/kowloonlogo.png">
+    
+                    <img src="/img/kowloonlogo.png" alt="Kowloon logo" height="80">
+                </picture>
             </a>
             <ul>
                 <div>
@@ -85,7 +90,7 @@
                     </div>
                 </div>    
             </ul>        
-            <div class="navbar">
+            <menu class="navbar">
                 <li> <a href="#">Menukort</a>
                     <div class="dropdown-content">
                         <div class="hover-effekt"> 
@@ -131,9 +136,8 @@
                                 <a href="#"><p>Følg os</p></a>
                             </div>
                         </div>
-                    </div>
                 </li>
-            </div>
+            </menu>
         </div>
     </header>  
      
@@ -165,7 +169,7 @@
      </article>
         
         
-        <figure class="billedesection" class="mellemrum">
+        <figure class="billedesection mellemrum">
             <figure class="stylepile">
                 <img src="img/piltilvenstre.png" alt="pil til venstre" class="stylepile">
              </figure>
@@ -186,13 +190,13 @@
 
             <section class="billedeforsvind">
            <section>
-            <img src="img/thailandforsidebillede.webp" alt="forside billede til thailand" class="billedestyle" class="billedeforsvind" >
+            <img src="img/thailandforsidebillede.webp" alt="forside billede til thailand" class="billedestyle billedeforsvind" >
             <h5 class="hoverstyletekst">Thailand</h5>
             <p>95 kr.</p>
            </section>
            
            <section>
-            <img src="img/vietnamforsidebillede.webp" alt="forside billede til vietnam" class="billedestyle" class="billedeforsvind" >
+            <img src="img/vietnamforsidebillede.webp" alt="forside billede til vietnam" class="billedestyle billedeforsvind" >
             <h5 class="hoverstyletekst">Vietnam</h5>
             <p>95 kr.</p>
            </section>
@@ -249,9 +253,9 @@
             </section>
         </article>
 
-     <a href="bestilbord.html">
-        <input id="bestil" type="submit" value="Bestil bord nu">
-     </a>
+        <form action="bestilbord.html">
+            <input id="bestil" type="submit" value="Bestil bord nu">
+        </form>
 
             
     </main>
