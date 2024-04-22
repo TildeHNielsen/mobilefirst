@@ -205,13 +205,15 @@
    color: black;
    font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
    font-weight: 500;
-   font-size: 2rem;
+   font-size: 1.7rem;
    font-weight: bolder;
+   padding-top: 1rem;
    
  }
  .topbillede {
    position: relative;
    text-align: center;
+   padding-top: 1.5rem;
  }
 
  .stortbillede {
@@ -242,7 +244,7 @@
 
 /*billederne i "kausellen + pilene"*/
  .billedestyle {
-   width: 200px;
+   width: 9rem;
    height: auto;
  }
 
@@ -255,7 +257,7 @@
  }
 
  .stylepile {
-   width: 10px;
+   width: 0.8rem;
    height: auto;
  }
 
@@ -519,4 +521,7 @@ padding-top: 10%
  .tekstfooter {
     font-size: 0.85rem;
  }
+ .billedestyle {
+  width: 15rem;
+}
 }

@@ -91,7 +91,7 @@
                     </div>
                 </div>    
             </ul>        
-            <div class="navbar">
+            <menu class="navbar">
                 <li> <a href="#">Menukort</a>
                     <div class="dropdown-content">
                         <div class="hover-effekt"> 
@@ -125,7 +125,7 @@
                 </li>
                 <li> <a href="/bestilbord.html">Bestil bord</a> </li>
                 <li> <a href="#">Bestil takeaway</a></li>
-                <li> <a href="#">Om os</a>
+                <li> <a href="#">Om os</a> 
                     <div class="dropdown-content" id="dropdown-left">
                         <div class="hover-effekt"> 
                             <a href="#"><p>Kontakt</p></a>
@@ -137,12 +137,10 @@
                                 <a href="#"><p>Følg os</p></a>
                             </div>
                         </div>
-                    </div>
-                </li>
+                    </li>
+                </menu>
             </div>
-    </header>
-        </div>
-    </header>  
+    </header> 
 
     <main>
     <section class="topbillede">
@@ -166,7 +164,7 @@
             Vi ses!</p>
         </article>
         <section>
-            <h4>Vælg restaurant</h4>
+            <h6>Vælg restaurant</h6>
         </section>
         <section class="billeder">
         <picture>
@@ -186,7 +184,9 @@
         </section>
 
         <form action="formaction.html">
-            <label for="antal"><h4>Antal gæster:</h4></label><br>
+        <section class="h4">
+            <label for="antal">Antal gæster:</label><br>
+        </section>
             <select id="antal" name="antal">
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -199,17 +199,29 @@
                 <option value="9">9</option>
                 <option value="10">10</option>
             </select>
-            <label for="dato"><h4>Vælg dato:</h4></label><br>
+        <section class="h4">
+            <label for="dato">Vælg dato:</label><br>
+        </section>
             <input type="date" id="dato" name="dato"><br>
-            <label for="tidspunkt"><h4>Vælg tidspunkt:</h4></label><br>
+        <section class="h4">
+            <label for="tidspunkt">Vælg tidspunkt:</label><br>
+        </section>
             <input type="time" id="tidspunkt" name="tidspunkt"><br>
-            <label for="navn"><h4>Navn:</h4></label><br>
+        <section class="h4">
+            <label for="navn">Navn:</label><br>
+        </section>
             <input type="text" id="navn" name="navn"><br>
-            <label for="mobil"><h4>Mobil nr.:</h4></label><br>
+        <section class="h4">
+            <label for="mobil">Mobil nr.:</label><br>
+        </section>
             <input type="text" id="mobil" name="mobil"><br>
-            <label for="email"><h4>E-mail:</h4></label><br>
+        <section class="h4">
+            <label for="email">E-mail:</label><br>
+        </section>
             <input type="text" id="email" name="email"><br>
-            <label for="besked"><h4>Tilføj besked til restauranten:</h4></label><br>
+        <section class="h4">
+            <label for="besked">Tilføj besked til restauranten:</label><br>
+        </section>
             <textarea name="besked" id="besked" cols="30" rows="10"></textarea> <br><br>
             <input id="bestil" type="submit" value="Bestil bord nu">
           </form> 
