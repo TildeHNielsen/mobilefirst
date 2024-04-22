@@ -247,6 +247,21 @@ font-weight: bolder;
    align-items: center;
  }
 
+ h6 {
+   font-size: 1.5rem;
+ }
+
+ .menuerne {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+ }
+
+ .pilned {
+   width: auto;
+   height: 10px;
+ }
+
 @media screen and (min-width: 992px) {
 
    /*desktop teksten vises - og vises i en lang tekst*/
