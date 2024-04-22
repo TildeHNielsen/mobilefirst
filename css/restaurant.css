@@ -205,8 +205,8 @@
    font-weight: 500;
    font-size: 2rem; 
    font-weight: bolder;
- }
-
+   
+}
  .topbillede {
    position: relative;
    text-align: center;
@@ -281,7 +281,7 @@ cursor: pointer;
  .baggrundbillede {
    background-repeat: no-repeat;
   background-size: cover;
-   background-image: url('../img/baggrund-til-anmeldelser.png');
+   background-image: url('../img/baggrund-til-anmeldelser.webp');
  }
  .bagrundanbefalinger {
    display: flex;
@@ -289,7 +289,6 @@ cursor: pointer;
    justify-content: center;
    text-align: center;
    padding-top: 5%;
-  
  }
 
  .tykcitat {
