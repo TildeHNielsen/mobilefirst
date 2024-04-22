@@ -209,6 +209,7 @@
  .topbillede {
    position: relative;
    text-align: center;
+   padding-top: 0.3rem;
  }
 
  .stortbillede {
@@ -237,7 +238,7 @@
 
 /*billederne i "kausellen + pilene"*/
  .billedestyle {
-   width: 200px;
+   width: 9rem;
    height: auto;
  }
 
@@ -250,7 +251,7 @@
  }
 
  .stylepile {
-   width: 10px;
+   width: 0.8rem;
    height: auto;
  }
 
@@ -346,7 +347,7 @@ cursor: pointer;
  }
 
  #lilleskærmtekst{
-   font-size: 50px;
+   font-size: 2rem;
  }
 
  /*padding til whitespace*/
@@ -523,4 +524,7 @@ padding-top: 10%
 .tekstfooter {
    font-size: 0.85rem;
 }
+.billedestyle {
+   width: 15rem;
+ }
 }

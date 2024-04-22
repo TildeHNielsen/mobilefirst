@@ -203,6 +203,8 @@
    left: 50%;
    transform: translate(-50%, -50%);
    color: black;
+   font-size: 1rem;
+   padding-top: 1rem;
    font-family: "Bebas Neue", sans-serif; /*hentet fra Google Fonts*/;
 
    
@@ -210,6 +212,7 @@
  .topbillede {
    position: relative;
    text-align: center;
+   padding-top: 1.5rem;
  }
 
  .stortbillede {
@@ -240,7 +243,7 @@
 
 /*billederne i "kausellen + pilene"*/
  .billedestyle {
-   width: 200px;
+   width: 9rem;
    height: auto;
  }
 
@@ -253,7 +256,7 @@
  }
 
  .stylepile {
-   width: 10px;
+   width: 0.8rem;
    height: auto;
  }
 
@@ -363,7 +366,7 @@ padding-top: 10%
 }
 
 #lilleskærmtekst{
-  font-size: 50px;
+  font-size: 2rem;
 }
 
 #bestil:hover {
@@ -522,4 +525,7 @@ padding-top: 10%
  .tekstfooter {
     font-size: 0.85rem;
  }
+ .billedestyle {
+  width: 15rem;
+}
 }
