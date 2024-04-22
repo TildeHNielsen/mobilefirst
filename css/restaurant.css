@@ -505,7 +505,7 @@ padding-top: 10%
 /*For at få iconerne til at være i midten på siden øverst placeret i iconernes section*/
 .iconerto {
    order: unset;
-   align-self: start;
+   align-self: start; 
  }
 
 /*placering af indhold i footer*/

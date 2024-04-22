@@ -230,16 +230,19 @@
    padding-top: 120px;
  }
 
+ /*overskrifterne til hver forret style */
  .overskrifttilret {
  font-size: 1.1rem;
  font-weight: bolder;
  }
 
+ /*beskrivelsen til hver forret style */
  .beskrivelsetilret {
    font-size: 0.80rem;
    padding-top: 5px;
  }
 
+ /*retterne bliver stylet. wrap, så de er resposive*/
  .retter {
    display: flex;
    flex-direction: row;
@@ -249,15 +252,18 @@
    padding-left: 4.5%;
  }
 
+ /*style af menuerne (landene osv.)*/
  h6 {
    font-size: 1.5rem;
    margin-left: 7%;
  }
 
+ /* style af 50kr*/
  h5 {
    margin-left: 7%;
  }
 
+ /*style af p teksten*/
  .pstyle {
    margin-left: 7%;
    padding-top: 10px;
@@ -265,6 +271,7 @@
    line-height: 1.5;
  }
 
+ /*style, så det ligner der er et link til deres allergiliste*/
  #linktilallergi {
  text-decoration: underline;
  font-style: oblique;
@@ -274,15 +281,18 @@
 cursor: pointer;
  }
 
+ /*padding imellem de forskellige*/
  .paddingmellem {
    padding-top: 5%;
  }
 
+ /*style af allergiliste menuen*/
  .allergiliste {
  padding-top: 10px;
  padding-bottom: 10px;
  }
 
+ /*style af hvordan menuerne placeres*/
  .menuerne {
    display: flex;
    flex-direction: row;
@@ -292,6 +302,7 @@ cursor: pointer;
    padding-bottom: 10px;
  }
 
+ /*padding til cards, så de får noget mellemrum*/
  .card {
    padding-top: 1rem;
    padding-bottom: 1rem;
@@ -299,12 +310,14 @@ cursor: pointer;
    padding-right: 1rem;
  }
 
+ /*style af de små pile ved siden af menuerne*/
  .pilned {
    width: auto;
    height: 10px;
    padding-left: 7px;
  }
 
+ /*style af billederne af forretterne*/
  .billederetter {
    width: 12rem;
    height: auto;
@@ -323,11 +336,13 @@ cursor: pointer;
       display: none;
    }
 
+/*billederne til forretterne gøres større på desktop*/
    .billederetter {
       width: 15rem;
       height: auto;
     }
 
+    /*mere padding mellem cards på desktop*/
     .card {
       padding-left: 1.5rem;
       padding-right: 1.5rem;
