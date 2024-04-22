@@ -189,27 +189,77 @@
        display: block;
    }
 }
+ /*main style*/
 
-main img {
-   max-width: 100%; /* Begræns billedets bredde til maksimalt 100% af parent containerens bredde */
-   height: auto; /* Gør billedets højde automatisk for at opretholde proportionerne */
-   background-size: cover;
-   display: block; /* Gør billedet til en blok-element, så margin og padding fungerer korrekt */
-   margin: 0 auto; /* Centrer billedet vandret */
+   /*så fonten er det samme + padding pga navbar*/
+
+    /*Det øverste billede på siden style*/
+.centered {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: black;
+   font-family: "Bebas Neue", sans-serif;
+   font-weight: lighter;
+   font-style: normal;
+ }
+
+ .topbillede {
+   position: relative;
+   text-align: center;
+ }
+
+ .stortbillede {
+  width: 100%;
+   height: 100%; 
 }
-.container {
+
+ /*teksten til desktop størrelse bliver fjernet*/
+ #storskærmtekst {
+   display: none;
+ }
+
+ #lilleskærmtekst{
+   font-size: 50px;
+ }
+
+ /*style til main generelt*/
+main {
+   font-family: "Radio Canada", sans-serif; /*font fundet på google*/
+   padding-top: 120px;
+ }
+
+ .overskrifttilret {
+font-size: 1.1rem;
+font-weight: bolder;
+ }
+
+ .beskrivelsetilret {
+   font-size: 1rem;
+ }
+
+ .retter {
    display: flex;
+   flex-direction: row;
    flex-wrap: wrap;
-   justify-content: space-between; /* Juster mellemrummet mellem kortene */
-}
+   justify-content: space-evenly;
+   align-items: center;
+ }
 
-.card {
-   width: calc(25% - 10px); /* Beregner bredden for hver card med en margin på 10px */
-   margin-bottom: 20px; /* Juster mellemrummet mellem rækker */
-   background-color: #ffffff;
-   border: 1px solid #ffffff;
-   padding: 20px;
-   box-sizing: border-box; /* Sikrer, at padding ikke påvirker bredden */
+@media screen and (min-width: 992px) {
+
+   /*desktop teksten vises - og vises i en lang tekst*/
+   #storskærmtekst {
+      display: contents; 
+      font-size: 140px;
+      
+   }
+/*teksten til mobil version forsvinder*/
+   #lilleskærmtekst {
+      display: none;
+   }
+
 }
 /*Style footer mobil*/
 
