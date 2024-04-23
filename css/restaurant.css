@@ -365,6 +365,7 @@ padding-top: 10%
    margin-bottom: 5rem;
    color: white;
    font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 #bestil:hover {

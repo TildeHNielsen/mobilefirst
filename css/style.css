@@ -49,7 +49,7 @@ h1 {
    display: flex;
    font-family: "Radio Canada", sans-serif; /*hentet fra Google Fonts*/;
    text-align: center;
-   font-size: 0.7rem;
+   font-size: 1rem;
    justify-content: space-evenly;
    position: relative;
    margin-top: 3%;
